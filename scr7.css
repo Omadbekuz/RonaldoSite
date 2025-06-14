@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Body styling */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000; /* Black */
+  color: #fff; /* White */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Root container */
+#root {
+  min-width: 1440px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+/* Navbar styling */
+#Navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-direction: row;
+}
+
+/* Navbar items example */
+
+#Navbar {
+  display: flex;
+}
+
+#Navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#Navbar a:hover {
+  color: #ff5757;
+}
+.left {
+  cursor: pointer;
+}
+.left h1:hover {
+  color: #ff5757;
+}
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image-gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 600px;
+  object-fit: cover;
+  display: inline-block;
+  transition: all 0.5s ease;
+  filter: brightness(0.6);
+}
+
+.image-gallery video {
+  width: 30%;
+  height: 100vh;
+  filter: brightness(1);
+}
+
+.image-gallery:not(:hover) video,img {
+  width: 10%;
+  height: 100vh;
+  filter: brightness(1);
+}
+.image-gallery img:hover video{
+   width: 30% !important;
+   height: 100vh !important;
+}
+.image-gallery:hover video {
+  width: 30%;
+  height: 100vh !important;
+  filter: brightness(1);
+}
+.image-gallery:hover img {
+   width: 300px;
+  height: 600px;
+  filter: brightness(0.5);
+}
+.image-gallery img:hover,
+.image-gallery video:hover {
+  width: 30%;
+  height: 100vh;
+  filter: brightness(1);
+}
