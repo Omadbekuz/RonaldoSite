@@ -96,14 +96,15 @@ body {
   filter: brightness(1);
 }
 
-.image-gallery:not(:hover) video,img {
-  width: 10%;
+.image-gallery:not(:hover) video,
+img {
+  width: 30%;
   height: 100vh;
   filter: brightness(1);
 }
-.image-gallery img:hover video{
-   width: 30% !important;
-   height: 100vh !important;
+.image-gallery img:hover video {
+  width: 30% !important;
+  height: 100vh !important;
 }
 .image-gallery:hover video {
   width: 30%;
@@ -111,7 +112,7 @@ body {
   filter: brightness(1);
 }
 .image-gallery:hover img {
-   width: 300px;
+  width: 300px;
   height: 600px;
   filter: brightness(0.5);
 }
